@@ -1,6 +1,7 @@
 import SwiftUI
 import CoreLocation
 
+
 struct ContentView: View {
     @State var newlocationManager = NewLocationManager()
     @State var oldLocationManager = OldLocationManager()
@@ -17,7 +18,9 @@ struct ContentView: View {
         }
         .padding()
         .task {
-            oldLocationManager.requestUserAuthorization()
+            if(oldLocationManager.isAuthorized) {
+                oldLocationManager.requestUserAuthorization()
+            }
             oldLocationManager.startCurrentLocationUpdates()
         }
         .task {
@@ -34,6 +37,10 @@ class OldLocationManager: NSObject, CLLocationManagerDelegate {
     
     private let locationManager = CLLocationManager()
     
+    var isAuthorized: Bool {
+        locationManager.authorizationStatus == .authorizedWhenInUse || locationManager.authorizationStatus == .authorizedAlways
+    }
+    
     override init() {
         super.init()
         locationManager.delegate = self
@@ -41,6 +48,10 @@ class OldLocationManager: NSObject, CLLocationManagerDelegate {
     
     func requestUserAuthorization() {
         locationManager.requestWhenInUseAuthorization()
+        if locationManager.authorizationStatus == .authorizedWhenInUse{
+            locationManager.requestAlwaysAuthorization()
+        }
+        print("Authorization status: \(locationManager.authorizationStatus.rawValue)")
     }
     
     func startCurrentLocationUpdates() {
@@ -54,14 +65,23 @@ class OldLocationManager: NSObject, CLLocationManagerDelegate {
     }
 }
 
+
 @Observable
 class NewLocationManager {
     var location: CLLocation? = nil
     
     private let locationManager = CLLocationManager()
     
+    var isAuthorized: Bool {
+        locationManager.authorizationStatus == .authorizedWhenInUse || locationManager.authorizationStatus == .authorizedAlways
+    }
+    
     func requestUserAuthorization() async throws {
         locationManager.requestWhenInUseAuthorization()
+        if locationManager.authorizationStatus == .authorizedWhenInUse{
+            locationManager.requestAlwaysAuthorization()
+        }
+        print("Authorization status: \(locationManager.authorizationStatus.rawValue)")
     }
     
     func startCurrentLocationUpdates() async throws {
@@ -71,4 +91,8 @@ class NewLocationManager {
             self.location = location
         }
     }
+}
+
+#Preview {
+    ContentView()
 }
