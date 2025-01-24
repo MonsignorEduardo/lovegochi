@@ -7,43 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A53E66B22D4034C2003EE160 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53E66B12D4034C2003EE160 /* WidgetKit.framework */; };
-		A53E66B42D4034C2003EE160 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53E66B32D4034C2003EE160 /* SwiftUI.framework */; };
-		A53E66BF2D4034C3003EE160 /* CercaAppWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A53E66AF2D4034C2003EE160 /* CercaAppWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A515979E2D414049005BAE4D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A515979D2D414049005BAE4D /* Alamofire */; };
+		A58A5EE12D4323BE00326880 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53E66B12D4034C2003EE160 /* WidgetKit.framework */; };
+		A58A5EE22D4323BE00326880 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53E66B32D4034C2003EE160 /* SwiftUI.framework */; };
+		A58A5EED2D4323BF00326880 /* MinimapaExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = A58A5EE02D4323BE00326880 /* MinimapaExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A53E66BD2D4034C3003EE160 /* PBXContainerItemProxy */ = {
+		A58A5EEB2D4323BF00326880 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A5F1879A2D3F0E1900F536A0 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A53E66AE2D4034C2003EE160;
-			remoteInfo = CercaAppWidgetExtension;
-		};
-		A5F187B32D3F0E1A00F536A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A5F1879A2D3F0E1900F536A0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A5F187A12D3F0E1900F536A0;
-			remoteInfo = CercaApp;
-		};
-		A5F187BD2D3F0E1A00F536A0 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A5F1879A2D3F0E1900F536A0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A5F187A12D3F0E1900F536A0;
-			remoteInfo = CercaApp;
+			remoteGlobalIDString = A58A5EDF2D4323BE00326880;
+			remoteInfo = MinimapaExtension;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		A51597A22D4145E5005BAE4D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A53E66C02D4034C3003EE160 /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				A53E66BF2D4034C3003EE160 /* CercaAppWidgetExtension.appex in Embed Foundation Extensions */,
+				A58A5EED2D4323BF00326880 /* MinimapaExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,57 +48,56 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A53E66AF2D4034C2003EE160 /* CercaAppWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = CercaAppWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		A53E66B12D4034C2003EE160 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		A53E66B32D4034C2003EE160 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		A5F187A22D3F0E1900F536A0 /* CercaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CercaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5F187B22D3F0E1A00F536A0 /* CercaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CercaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5F187BC2D3F0E1A00F536A0 /* CercaAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CercaAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58A5EE02D4323BE00326880 /* MinimapaExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MinimapaExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A58A5EF22D4323D000326880 /* MinimapaExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MinimapaExtension.entitlements; sourceTree = "<group>"; };
+		A5F187A22D3F0E1900F536A0 /* Edugochi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Edugochi.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		A55259792D406F73001A96C5 /* Exceptions for "CercaAppWidget" folder in "CercaAppWidgetExtension" target */ = {
+		A58A5EF12D4323BF00326880 /* Exceptions for "Minimapa" folder in "MinimapaExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
-			target = A53E66AE2D4034C2003EE160 /* CercaAppWidgetExtension */;
+			target = A58A5EDF2D4323BE00326880 /* MinimapaExtension */;
+		};
+		A5C43FC72D408162003C7103 /* Exceptions for "Edugochi" folder in "Edugochi" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = A5F187A12D3F0E1900F536A0 /* Edugochi */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		A53E66B52D4034C2003EE160 /* CercaAppWidget */ = {
+		A58A5EE32D4323BE00326880 /* Minimapa */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				A55259792D406F73001A96C5 /* Exceptions for "CercaAppWidget" folder in "CercaAppWidgetExtension" target */,
+				A58A5EF12D4323BF00326880 /* Exceptions for "Minimapa" folder in "MinimapaExtension" target */,
 			);
-			path = CercaAppWidget;
+			path = Minimapa;
 			sourceTree = "<group>";
 		};
-		A5F187A42D3F0E1900F536A0 /* CercaApp */ = {
+		A5F187A42D3F0E1900F536A0 /* Edugochi */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CercaApp;
-			sourceTree = "<group>";
-		};
-		A5F187B52D3F0E1A00F536A0 /* CercaAppTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CercaAppTests;
-			sourceTree = "<group>";
-		};
-		A5F187BF2D3F0E1A00F536A0 /* CercaAppUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CercaAppUITests;
+			exceptions = (
+				A5C43FC72D408162003C7103 /* Exceptions for "Edugochi" folder in "Edugochi" target */,
+			);
+			path = Edugochi;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A53E66AC2D4034C2003EE160 /* Frameworks */ = {
+		A58A5EDD2D4323BE00326880 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A53E66B42D4034C2003EE160 /* SwiftUI.framework in Frameworks */,
-				A53E66B22D4034C2003EE160 /* WidgetKit.framework in Frameworks */,
+				A58A5EE22D4323BE00326880 /* SwiftUI.framework in Frameworks */,
+				A58A5EE12D4323BE00326880 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,20 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5F187AF2D3F0E1A00F536A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5F187B92D3F0E1A00F536A0 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				A515979E2D414049005BAE4D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +124,9 @@
 		A5F187992D3F0E1900F536A0 = {
 			isa = PBXGroup;
 			children = (
-				A5F187A42D3F0E1900F536A0 /* CercaApp */,
-				A5F187B52D3F0E1A00F536A0 /* CercaAppTests */,
-				A5F187BF2D3F0E1A00F536A0 /* CercaAppUITests */,
-				A53E66B52D4034C2003EE160 /* CercaAppWidget */,
+				A58A5EF22D4323D000326880 /* MinimapaExtension.entitlements */,
+				A5F187A42D3F0E1900F536A0 /* Edugochi */,
+				A58A5EE32D4323BE00326880 /* Minimapa */,
 				A53E66B02D4034C2003EE160 /* Frameworks */,
 				A5F187A32D3F0E1900F536A0 /* Products */,
 			);
@@ -153,10 +135,8 @@
 		A5F187A32D3F0E1900F536A0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A5F187A22D3F0E1900F536A0 /* CercaApp.app */,
-				A5F187B22D3F0E1A00F536A0 /* CercaAppTests.xctest */,
-				A5F187BC2D3F0E1A00F536A0 /* CercaAppUITests.xctest */,
-				A53E66AF2D4034C2003EE160 /* CercaAppWidgetExtension.appex */,
+				A5F187A22D3F0E1900F536A0 /* Edugochi.app */,
+				A58A5EE02D4323BE00326880 /* MinimapaExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,97 +144,53 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A53E66AE2D4034C2003EE160 /* CercaAppWidgetExtension */ = {
+		A58A5EDF2D4323BE00326880 /* MinimapaExtension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A53E66C32D4034C3003EE160 /* Build configuration list for PBXNativeTarget "CercaAppWidgetExtension" */;
+			buildConfigurationList = A58A5EEE2D4323BF00326880 /* Build configuration list for PBXNativeTarget "MinimapaExtension" */;
 			buildPhases = (
-				A53E66AB2D4034C2003EE160 /* Sources */,
-				A53E66AC2D4034C2003EE160 /* Frameworks */,
-				A53E66AD2D4034C2003EE160 /* Resources */,
+				A58A5EDC2D4323BE00326880 /* Sources */,
+				A58A5EDD2D4323BE00326880 /* Frameworks */,
+				A58A5EDE2D4323BE00326880 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				A53E66B52D4034C2003EE160 /* CercaAppWidget */,
+				A58A5EE32D4323BE00326880 /* Minimapa */,
 			);
-			name = CercaAppWidgetExtension;
+			name = MinimapaExtension;
 			packageProductDependencies = (
 			);
-			productName = CercaAppWidgetExtension;
-			productReference = A53E66AF2D4034C2003EE160 /* CercaAppWidgetExtension.appex */;
+			productName = MinimapaExtension;
+			productReference = A58A5EE02D4323BE00326880 /* MinimapaExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		A5F187A12D3F0E1900F536A0 /* CercaApp */ = {
+		A5F187A12D3F0E1900F536A0 /* Edugochi */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A5F187C62D3F0E1A00F536A0 /* Build configuration list for PBXNativeTarget "CercaApp" */;
+			buildConfigurationList = A5F187C62D3F0E1A00F536A0 /* Build configuration list for PBXNativeTarget "Edugochi" */;
 			buildPhases = (
 				A5F1879E2D3F0E1900F536A0 /* Sources */,
 				A5F1879F2D3F0E1900F536A0 /* Frameworks */,
 				A5F187A02D3F0E1900F536A0 /* Resources */,
 				A53E66C02D4034C3003EE160 /* Embed Foundation Extensions */,
+				A51597A22D4145E5005BAE4D /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A53E66BE2D4034C3003EE160 /* PBXTargetDependency */,
+				A58A5EEC2D4323BF00326880 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
-				A5F187A42D3F0E1900F536A0 /* CercaApp */,
+				A5F187A42D3F0E1900F536A0 /* Edugochi */,
 			);
-			name = CercaApp;
+			name = Edugochi;
 			packageProductDependencies = (
+				A515979D2D414049005BAE4D /* Alamofire */,
 			);
-			productName = CercaApp;
-			productReference = A5F187A22D3F0E1900F536A0 /* CercaApp.app */;
+			productName = Edugochi;
+			productReference = A5F187A22D3F0E1900F536A0 /* Edugochi.app */;
 			productType = "com.apple.product-type.application";
-		};
-		A5F187B12D3F0E1A00F536A0 /* CercaAppTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5F187C92D3F0E1A00F536A0 /* Build configuration list for PBXNativeTarget "CercaAppTests" */;
-			buildPhases = (
-				A5F187AE2D3F0E1A00F536A0 /* Sources */,
-				A5F187AF2D3F0E1A00F536A0 /* Frameworks */,
-				A5F187B02D3F0E1A00F536A0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A5F187B42D3F0E1A00F536A0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A5F187B52D3F0E1A00F536A0 /* CercaAppTests */,
-			);
-			name = CercaAppTests;
-			packageProductDependencies = (
-			);
-			productName = CercaAppTests;
-			productReference = A5F187B22D3F0E1A00F536A0 /* CercaAppTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		A5F187BB2D3F0E1A00F536A0 /* CercaAppUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = A5F187CC2D3F0E1A00F536A0 /* Build configuration list for PBXNativeTarget "CercaAppUITests" */;
-			buildPhases = (
-				A5F187B82D3F0E1A00F536A0 /* Sources */,
-				A5F187B92D3F0E1A00F536A0 /* Frameworks */,
-				A5F187BA2D3F0E1A00F536A0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				A5F187BE2D3F0E1A00F536A0 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				A5F187BF2D3F0E1A00F536A0 /* CercaAppUITests */,
-			);
-			name = CercaAppUITests;
-			packageProductDependencies = (
-			);
-			productName = CercaAppUITests;
-			productReference = A5F187BC2D3F0E1A00F536A0 /* CercaAppUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -266,23 +202,15 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
-					A53E66AE2D4034C2003EE160 = {
+					A58A5EDF2D4323BE00326880 = {
 						CreatedOnToolsVersion = 16.2;
 					};
 					A5F187A12D3F0E1900F536A0 = {
 						CreatedOnToolsVersion = 16.2;
 					};
-					A5F187B12D3F0E1A00F536A0 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = A5F187A12D3F0E1900F536A0;
-					};
-					A5F187BB2D3F0E1A00F536A0 = {
-						CreatedOnToolsVersion = 16.2;
-						TestTargetID = A5F187A12D3F0E1900F536A0;
-					};
 				};
 			};
-			buildConfigurationList = A5F1879D2D3F0E1900F536A0 /* Build configuration list for PBXProject "CercaApp" */;
+			buildConfigurationList = A5F1879D2D3F0E1900F536A0 /* Build configuration list for PBXProject "Edugochi" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -292,22 +220,21 @@
 			mainGroup = A5F187992D3F0E1900F536A0;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
+				A515979C2D414049005BAE4D /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A5F187A32D3F0E1900F536A0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5F187A12D3F0E1900F536A0 /* CercaApp */,
-				A5F187B12D3F0E1A00F536A0 /* CercaAppTests */,
-				A5F187BB2D3F0E1A00F536A0 /* CercaAppUITests */,
-				A53E66AE2D4034C2003EE160 /* CercaAppWidgetExtension */,
+				A5F187A12D3F0E1900F536A0 /* Edugochi */,
+				A58A5EDF2D4323BE00326880 /* MinimapaExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A53E66AD2D4034C2003EE160 /* Resources */ = {
+		A58A5EDE2D4323BE00326880 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,24 +248,10 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5F187B02D3F0E1A00F536A0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5F187BA2D3F0E1A00F536A0 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A53E66AB2D4034C2003EE160 /* Sources */ = {
+		A58A5EDC2D4323BE00326880 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -352,52 +265,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A5F187AE2D3F0E1A00F536A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A5F187B82D3F0E1A00F536A0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A53E66BE2D4034C3003EE160 /* PBXTargetDependency */ = {
+		A58A5EEC2D4323BF00326880 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A53E66AE2D4034C2003EE160 /* CercaAppWidgetExtension */;
-			targetProxy = A53E66BD2D4034C3003EE160 /* PBXContainerItemProxy */;
-		};
-		A5F187B42D3F0E1A00F536A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A5F187A12D3F0E1900F536A0 /* CercaApp */;
-			targetProxy = A5F187B32D3F0E1A00F536A0 /* PBXContainerItemProxy */;
-		};
-		A5F187BE2D3F0E1A00F536A0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A5F187A12D3F0E1900F536A0 /* CercaApp */;
-			targetProxy = A5F187BD2D3F0E1A00F536A0 /* PBXContainerItemProxy */;
+			target = A58A5EDF2D4323BE00326880 /* MinimapaExtension */;
+			targetProxy = A58A5EEB2D4323BF00326880 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		A53E66C12D4034C3003EE160 /* Debug */ = {
+		A58A5EEF2D4323BF00326880 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MinimapaExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RH5S3MAR83;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CercaAppWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CercaAppWidget;
+				INFOPLIST_FILE = Minimapa/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Minimapa;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -405,7 +296,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = monsignor.CercaApp.CercaAppWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = monsignor.eduardo.edugochi.Minimapa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -414,17 +305,19 @@
 			};
 			name = Debug;
 		};
-		A53E66C22D4034C3003EE160 /* Release */ = {
+		A58A5EF02D4323BF00326880 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = MinimapaExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RH5S3MAR83;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CercaAppWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = CercaAppWidget;
+				INFOPLIST_FILE = Minimapa/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Minimapa;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -432,7 +325,7 @@
 					"@executable_path/../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = monsignor.CercaApp.CercaAppWidget;
+				PRODUCT_BUNDLE_IDENTIFIER = monsignor.eduardo.edugochi.Minimapa;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -567,13 +460,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Edugochi/Edugochi.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CercaApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Edugochi/Preview Content\"";
 				DEVELOPMENT_TEAM = RH5S3MAR83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CercaApp/Info.plist;
+				INFOPLIST_FILE = Edugochi/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = NSLocationAlwaysAndWhenInUseUsageDescription;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = NSLocationAlwaysUsageDescription;
@@ -581,18 +477,24 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = monsignor.CercaApp;
+				PRODUCT_BUNDLE_IDENTIFIER = monsignor.eduardo.edugochi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -601,13 +503,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = Edugochi/EdugochiRelease.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CercaApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Edugochi/Preview Content\"";
 				DEVELOPMENT_TEAM = RH5S3MAR83;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = CercaApp/Info.plist;
+				INFOPLIST_FILE = Edugochi/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = NSLocationAlwaysAndWhenInUseUsageDescription;
 				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = NSLocationAlwaysUsageDescription;
@@ -615,106 +520,41 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = monsignor.CercaApp;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = monsignor.eduardo.edugochi;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
-		A5F187CA2D3F0E1A00F536A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RH5S3MAR83;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = monsignor.CercaAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CercaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CercaApp";
-			};
-			name = Debug;
-		};
-		A5F187CB2D3F0E1A00F536A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RH5S3MAR83;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = monsignor.CercaAppTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CercaApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CercaApp";
-			};
-			name = Release;
-		};
-		A5F187CD2D3F0E1A00F536A0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RH5S3MAR83;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = monsignor.CercaAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CercaApp;
-			};
-			name = Debug;
-		};
-		A5F187CE2D3F0E1A00F536A0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = RH5S3MAR83;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = monsignor.CercaAppUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = CercaApp;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A53E66C32D4034C3003EE160 /* Build configuration list for PBXNativeTarget "CercaAppWidgetExtension" */ = {
+		A58A5EEE2D4323BF00326880 /* Build configuration list for PBXNativeTarget "MinimapaExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A53E66C12D4034C3003EE160 /* Debug */,
-				A53E66C22D4034C3003EE160 /* Release */,
+				A58A5EEF2D4323BF00326880 /* Debug */,
+				A58A5EF02D4323BF00326880 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5F1879D2D3F0E1900F536A0 /* Build configuration list for PBXProject "CercaApp" */ = {
+		A5F1879D2D3F0E1900F536A0 /* Build configuration list for PBXProject "Edugochi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5F187C42D3F0E1A00F536A0 /* Debug */,
@@ -723,7 +563,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5F187C62D3F0E1A00F536A0 /* Build configuration list for PBXNativeTarget "CercaApp" */ = {
+		A5F187C62D3F0E1A00F536A0 /* Build configuration list for PBXNativeTarget "Edugochi" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A5F187C72D3F0E1A00F536A0 /* Debug */,
@@ -732,25 +572,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A5F187C92D3F0E1A00F536A0 /* Build configuration list for PBXNativeTarget "CercaAppTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A5F187CA2D3F0E1A00F536A0 /* Debug */,
-				A5F187CB2D3F0E1A00F536A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		A5F187CC2D3F0E1A00F536A0 /* Build configuration list for PBXNativeTarget "CercaAppUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				A5F187CD2D3F0E1A00F536A0 /* Debug */,
-				A5F187CE2D3F0E1A00F536A0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A515979C2D414049005BAE4D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.10.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A515979D2D414049005BAE4D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A515979C2D414049005BAE4D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A5F1879A2D3F0E1900F536A0 /* Project object */;
 }

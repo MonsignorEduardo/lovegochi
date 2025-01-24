@@ -1,0 +1,16 @@
+name: 'maria-server'
+
+services:
+  database:
+    image: 'postgis/postgis:17-3.5'
+    restart: on-failure
+    ports:
+      - 25432:5432
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    volumes:
+      - db:/var/lib/postgresql/data/
+
+volumes:
+  db:
