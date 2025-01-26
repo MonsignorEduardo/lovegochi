@@ -3,12 +3,15 @@
 	"version": "1.0.50",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"dev": "bun run --watch src/index.ts"
+		"dev": "bun run --watch src/index.ts",
+		"start": "bun run src/index.ts"
 	},
 	"dependencies": {
 		"@elysiajs/swagger": "^1.2.0",
 		"bun-sqlite-key-value": "^1.13.1",
-		"elysia": "latest"
+		"consola": "^3.4.0",
+		"elysia": "latest",
+		"geolib": "^3.3.4"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "1.9.4",
