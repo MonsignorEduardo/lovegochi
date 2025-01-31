@@ -1,8 +1,8 @@
 import { BunSqliteKeyValue } from "bun-sqlite-key-value";
 
-const store = new BunSqliteKeyValue();
+const store = new BunSqliteKeyValue("./db/db.sqlite");
 
-type Location = {
+export type Location = {
 	latitude: number;
 	longitude: number;
 };
