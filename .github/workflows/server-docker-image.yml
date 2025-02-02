@@ -3,10 +3,10 @@ name: Build and Push Server Docker Image
 on:
   push:
     branches: ["main"]
-    paths: ["server/**"]
+    paths: ["server/**", ".github/workflows/server-docker-image.yml"]
   pull_request:
     branches: ["main"]
-    paths: ["server/**"]
+    paths: ["server/**", ".github/workflows/server-docker-image.yml"]
 
 jobs:
   docker:
@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          context: "{{defaultContext}}:Server"
-          tags: ghcr.io/MonsignorEduardo/EduGochiServer:latest
+          context: "{{defaultContext}}:server"
+          tags: ghcr.io/MonsignorEduardo/lovegochi:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
