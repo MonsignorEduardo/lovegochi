@@ -8,6 +8,8 @@ Edugochi
 
 This server is built with Elysia and handles location data using getLocationUser and setLocationUser from the Bun-based key-value store in BunSqliteKeyValue.
 
+Go to `/swagger` to see the API documentation.
+
 ### Installation and Usage
 
 - 1 Install dependencies:
