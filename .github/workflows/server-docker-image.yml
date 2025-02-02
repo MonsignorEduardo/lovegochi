@@ -31,6 +31,6 @@ jobs:
         with:
           push: true
           context: "{{defaultContext}}:server"
-          tags: ghcr.io/MonsignorEduardo/lovegochi:latest
+          tags: ghcr.io/monsignoreduardo/lovegochi:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
