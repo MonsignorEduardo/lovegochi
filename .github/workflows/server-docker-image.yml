@@ -3,10 +3,10 @@ name: Build and Push Server Docker Image
 on:
   push:
     branches: ["main"]
-    paths: ["Server/**"]
+    paths: ["server/**"]
   pull_request:
     branches: ["main"]
-    paths: ["Server/**"]
+    paths: ["server/**"]
 
 jobs:
   docker:
