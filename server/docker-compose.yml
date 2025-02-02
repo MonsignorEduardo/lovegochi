@@ -1,0 +1,8 @@
+services:
+  lovegochi_server:
+    image: ghcr.io/monsignoreduardo/lovegochi_server:main
+    restart: unless-stopped
+    ports:
+      - 4080:3000
+    volumes:
+      - ./db:/usr/src/app/db
