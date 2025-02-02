@@ -1,15 +1,30 @@
-# Elysia with Bun runtime
+# Server Overview
 
-## Getting Started
-To get started with this template, simply paste this command into your terminal:
+This server is built with Elysia and handles location data using getLocationUser and setLocationUser from the Bun-based key-value store in BunSqliteKeyValue.
+
+## Installation and Usage
+
+- 1 Install dependencies:
+
 ```bash
-bun create elysia ./elysia-example
+bun install
 ```
 
-## Development
-To start the development server run:
+- 2 Start the server:
+
 ```bash
-bun run dev
+bun start
 ```
 
-Open http://localhost:3000/ with your browser to see the result.
+The server runs by default on port 3000. Check [index.ts](src/index.ts) for the main entrypoint.
+
+## Docker
+
+A [Dockerfile](Dockerfile) is provided:
+
+```bash
+docker build -t server .
+docker run -p 3000:3000 server
+```
+
+Use [.dockerignore](.dockerignore) to exclude unwanted files from your container. For environment options, see tsconfig.json and the Bun runtime docs.
