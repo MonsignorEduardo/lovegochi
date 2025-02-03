@@ -44,3 +44,5 @@ package-lock.json
 
 /db/**
 !/db/.gitkeep
+
+.env

@@ -1,8 +1,8 @@
+import consola from "consola";
 import Elysia, { error, t } from "elysia";
 import { getDistance } from "geolib";
-
-import consola from "consola";
 import { type Location, getLocationUser, setLocationUser } from "../db";
+import { bearer } from "../lib/bearer";
 
 const getMinDistance = (location1: Location, location2: Location) => {
 	const distance = getDistance(
@@ -13,7 +13,13 @@ const getMinDistance = (location1: Location, location2: Location) => {
 	return distance;
 };
 
-export const location = new Elysia({ name: "location", prefix: "/api" })
+export const location = new Elysia({
+	prefix: "/api",
+	detail: {
+		tags: ["Location"],
+		security: [{ bearerAuth: [] }],
+	},
+})
 	.post(
 		"/location",
 		async ({ body: { name, latitude, longitude } }) => {
@@ -21,7 +27,6 @@ export const location = new Elysia({ name: "location", prefix: "/api" })
 			consola.info(`User ${name} location set to ${latitude}, ${longitude}`);
 			return { message: "Location set" };
 		},
-
 		{
 			body: t.Object({
 				name: t.String(),

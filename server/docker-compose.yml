@@ -2,6 +2,8 @@ services:
   lovegochi_server:
     image: ghcr.io/monsignoreduardo/lovegochi_server:main
     restart: unless-stopped
+    environment:
+      - SECRET_TOKEN=your_secret_token
     ports:
       - 4080:3000
     volumes:
